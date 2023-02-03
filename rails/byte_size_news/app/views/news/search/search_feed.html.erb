@@ -1,6 +1,15 @@
 <h1>Search Feed</h1>
 
+<h2>Issues:</h2>
+
 <% @issues.each do |issue| %> 
   <h2><%= issue.title %></h2>
   <p><%= issue.content %></p>
+<% end %>
+
+<h2>Users:</h2>
+
+<% @users.each do |user| %> 
+  <h2><%= user.first_name %></h2>
+  <p><%= user.last_name %></p>
 <% end %>

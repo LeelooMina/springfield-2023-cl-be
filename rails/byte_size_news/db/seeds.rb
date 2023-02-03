@@ -9,4 +9,7 @@
 
 (0..100).each do 
   Issue.create(title: Faker::Lorem.sentence, content: Faker::Lorem.paragraph)
+  User.create(first_name: Faker::Lorem.sentence, last_name: Faker::Lorem.sentence)
 end
+
+
